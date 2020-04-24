@@ -1,0 +1,8 @@
+site_name: SemanticMemes
+nav:
+  - Home: index.md
+  - About: about.md
+  - Publications: publications.md
+  - Dataset: dataset.md
+  - Annotation Site: annotation-site.md
+theme: readthedocs
