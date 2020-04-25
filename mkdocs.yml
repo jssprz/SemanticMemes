@@ -6,3 +6,6 @@ nav:
   - Dataset: dataset.md
   - Annotation Site: annotation-site.md
 theme: readthedocs
+extra_css: [extra.css]
+markdown_extensions:
+  - markdown.extensions.attr_list
