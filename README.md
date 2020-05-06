@@ -1,5 +1,5 @@
 # SemanticMemes: A Large Scale Chilean Memes Benchmark for Memes Understanding
-This repository is intended to hosts tools and demos for [SemanticMemes][doc-link].
+This repository is intended to hosts baseline, tools and demos for [SemanticMemes][doc-link].
 
 # Do you want to contribute?
 
