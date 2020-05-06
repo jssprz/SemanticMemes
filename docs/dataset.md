@@ -28,9 +28,9 @@ Spanish Vocabulary: **8,669** words
 
 # Download
 
-This dataset has restricted access. Contact us to download the image files.
+The SemanticMemes v1.1 dataset has restricted access. Please fill this [form](https://forms.gle/gLb8JgGn6eWEEBzk6) to download the image files.
 
-- *v1.0* [.tar.gz](mailto:jeperez@dcc.uchile.cl)
+- *v1.1* [.tar.gz](https://forms.gle/gLb8JgGn6eWEEBzk6)
 
 # Files
 
