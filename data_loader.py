@@ -1,25 +1,25 @@
+from random import randint
 import torch
 from torch.utils.data import Dataset, DataLoader
-from random import randint
 
 class MemeToTextDataset(Dataset):
     def __init__(self, embeddings, data, img_features, interval):
         self.img_features = img_features
-        
+
         self.wordvectors = embeddings
         self.vocab = {}
         for k, v in data['vocab'].items():
             self.vocab[v] = k
-        
+
         self.texts = []
         self.text_embeddings = []
         self.ids = []
         for i, (target, text, desc, interp) in enumerate(zip(data['images']['targets'], data['images']['texts'], data['images']['interpretations'], data['images']['descriptions'])):
             if i >= interval[0] and i <= interval[1] and (target == 1 or target == 4):
-#                 if len(text):
-#                     self.ids.append(i)
-#                     self.text_embeddings.append(self.__text_emmbeding(text))
-#                     self.texts.append(self.__sentence(text))
+                if len(text):
+                    self.ids.append(i)
+                    self.text_embeddings.append(self.__text_emmbeding(text))
+                    self.texts.append(self.__sentence(text))
                 if len(desc):
                     self.ids.append(i)
                     self.text_embeddings.append(self.__text_emmbeding(desc))
@@ -44,25 +44,22 @@ class MemeToTextDataset(Dataset):
         for t in text:
             words.append(self.vocab[t])
         return ' '.join(words)
-    
+
     def __text_emmbeding(self, text):
         result = []
         for t in text:
             s = self.vocab[t]
-            while len(s) >= 1 and s[0] in ['/', '-', '¡', '¿', '.', ',', ';', ':', '\'', '"']:
-                s = s[1:]
-            
             try:
                 vec = self.wordvectors[s]
             except:
-#                 print('error with word "{}" reduced to "{}"'.format(self.vocab[t], s))
+                # print('error with word "{}"'.format(s))
                 pass
             else:
                 result.append(torch.from_numpy(vec).view(1, -1))
         if len(result):
             return torch.mean(torch.cat(result, dim=0), dim=0)
         else:
-            return torch.from_numpy(self.wordvectors['ambiguo'])
+            return torch.from_numpy(self.wordvectors['a'])
 
 def get_train_loader(embeddings, data, img_features, batch_size):
     interval = (0, 49999)
