@@ -7,4 +7,4 @@ This repository is intended to hosts baseline, tools and demos for [SemanticMeme
 2. Fork the repository and make your changes!
 3. Send a pull request
 
-[doc-link]: https://jssprz.github.io/semantic-memes-docs/
+[doc-link]: https://bit.ly/35NqAUB
