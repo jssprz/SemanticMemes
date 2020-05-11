@@ -1,1 +1,1 @@
-[https://s06.imfd.cl/04/twitter/](https://s06.imfd.cl/04/twitter/)
+[https://s06.imfd.cl/04/twitter/](https://bit.ly/3fBNUci)
