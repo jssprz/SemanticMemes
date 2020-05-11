@@ -1,6 +1,10 @@
 # SemanticMemes: A Large Scale Chilean Memes Benchmark for Memes Understanding
 This repository is intended to hosts baseline, tools and demos for [SemanticMemes][doc-link].
 
+# Current Tasks
+1. Meme Recognition Task
+2. Semantic Search of Memes Task
+
 # Do you want to contribute?
 
 1. Check the open issues or open a new issue to start a discussion around your new idea or the bug you found
