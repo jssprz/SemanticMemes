@@ -12,3 +12,14 @@ This repository is intended to hosts baseline, tools and demos for [SemanticMeme
 3. Send a pull request
 
 [doc-link]: https://bit.ly/35NqAUB
+
+# Cite
+```
+@inproceedings{PerezMartin20ica,
+               author = {Jesus Perez-Martin and Benjamin Bustos and Magdalena Saldana}
+               title = {Semantic Search of Memes on Twitter},
+               booktitle = {International Communication Association (ICA)},
+               year = {2020},
+               month = {May}
+}
+```
