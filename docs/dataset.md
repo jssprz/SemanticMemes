@@ -26,21 +26,6 @@ Spanish Vocabulary: **8,669** words
 
 - **Semantic Description**: alude que las coaliciones políticas en chile se encuentran confabuladas y se ponen de acuerdo respecto a como funciona el pais, dejando de lado a la ciudadanía.
 
-# Download
-
-The SemanticMemes v1.1 dataset has restricted access. Please fill this [form](https://bit.ly/2yANimU) to download the image files.
-
-- *v1.1* [.tar.gz](https://bit.ly/2yANimU)
-
-# Files
-
-## Corpus
-- [datainfo.json](https://bit.ly/3bj1s9d)
-
-## Features
-- **CNN** *ResNet-152* [resnet_features.hdf5](https://s06.imfd.cl/04/twitter/media/MemesDataSet/resnet_features.hdf5) (425MB)
-- **HOG** [features.hdf5](https://s06.imfd.cl/04/twitter/media/MemesDataSet/features.hdf5) (26MB)
-
 # Citing the Dataset
 ```
 @inproceedings{PerezMartin20ica,
